@@ -1,0 +1,89 @@
+.container{
+    width: 800px;
+    height:600px;
+   
+}
+
+#paketler{
+    height: 600px;
+    
+}
+
+
+
+.text-overlay {
+    padding-bottom: 80px;
+    position: absolute;
+    top: 50%; /* Dikey ortalama */
+    left: 50%; /* Yatay ortalama */
+    transform: translate(-50%, -50%); /* Merkeze hizalama */
+    color:#FFFAF0;
+    font-size: 22px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+  
+  }
+
+
+#bilgial{
+    margin-top: 55px;
+    height: 270px;
+}
+
+.copyright{
+
+    font-size: 10px;
+   margin-left: 5px;
+    
+   
+}
+
+.row img:hover{
+    opacity: 0.8;
+
+}
+#soru{
+    height: 200px;
+}
+
+#soru img{
+    width: 400px;
+    height: 250px;
+    margin-left: 340px;
+    margin-top: 5px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.buttons-group{
+    margin-left: 320px;
+    margin-top: 25px;
+}
+  
+  button.secenek {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  button.secenek:hover {
+    background-color: #0056b3;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #geriBildirim {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
