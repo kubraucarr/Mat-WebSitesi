@@ -117,7 +117,7 @@
 
     
                 <div id="bilgial" class="container">
-                  
+                  <form id="bilgial-form" action="http://localhost:3001/send-mail" method="POST">
                   <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Mail Adresiniz </label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -125,7 +125,9 @@
                   <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Bilgi Almak İçin Yazın</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button type="submit" class="btn btn-primary">Gönder</button>
                   </div>
+                </form>
                 </div>
        
 
@@ -150,7 +152,7 @@
           </div>
         </section>
    
-
+      <script src="server.js"></script>
      <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../Users/oukar/OneDrive/Masaüstü/Web Sitesi"
+		},
+		{
+			"name": "Mat-WebSitesi",
+			"path": "../../Users/oukar/OneDrive/Masaüstü/Web Sitesi/Mat-WebSitesi"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Web Sitesi"
+	}
+}
