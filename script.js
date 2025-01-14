@@ -22,3 +22,22 @@ secenekler.forEach((button)=>{
 document.getElementById('gonderBtn').addEventListener('click',function(){
     alert('işleminiz yapıldı!');
 })
+
+
+
+
+document.getElementById("rezervasyonFormu").addEventListener("submit", function (event) {
+    event.preventDefault();
+  
+    const ad = document.getElementById("ad").value;
+    const email = document.getElementById("email").value;
+    const tarih = document.getElementById("tarih").value;
+    const saat = document.getElementById("saat").value;
+  
+    if (ad && email && tarih && saat) {
+      alert(`Rezervasyon Başarılı! Ad: ${ad}, Tarih: ${tarih}, Saat: ${saat}`);
+    } else {
+      alert("Lütfen tüm alanları doldurun!");
+    }
+  });
+  
