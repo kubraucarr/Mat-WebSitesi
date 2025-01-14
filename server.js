@@ -22,24 +22,24 @@ const transfer = nodemailer.createTransport({
 });
 
 app.post('/send-mail',(req,res)=>{
-  const {email,message} = req.body;
+    const {email,message} = req.body;
 
-  const mailbilgi={
-    from:"kvd.19998@gmail.com",
-    to:"kvd.19998@gmail.com",
-    subject:"NodeJS ile Mail",
-    text:`Gönderen: ${email}\nMesaj: ${message}`,
+    const mailbilgi={
+      from:"kvd.19998@gmail.com",
+      to:"kvd.19998@gmail.com",
+      subject: `${email} size bir mesaj yolladı!`,
+      text:`Gönderen: ${email}\nMesaj: ${message}`,
 
-};
+  };
 
-transfer.sendMail(mailbilgi,(error , info)=>{
-  if (error) {
-    console.error('Hata:', error);
-    return res.status(500).json({ message: 'Mail gönderilemedi', error });
-  }
-  console.log('E-posta gönderildi:', info.response);
-  res.status(200).json({ message: 'Mail başarıyla gönderildi!' });
-});
+  transfer.sendMail(mailbilgi,(error , info)=>{
+    if (error) {
+      console.error('Hata:', error);
+      return res.status(500).json({ message: 'Mail gönderilemedi', error });
+    }
+    console.log('E-posta gönderildi:', info.response);
+    res.status(200).json({ message: 'Mail başarıyla gönderildi!' });
+  });
 });
 
 app.listen(PORT, () => {

@@ -4,6 +4,11 @@
    
 }
 
+header img{
+  width: 150px;
+  height: 50px;
+}
+
 #paketler{
     height: 600px;
     

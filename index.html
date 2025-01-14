@@ -11,8 +11,30 @@
 </head>
 <body>
     <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+        <img src="Red Simple Geometric Pencil Icon Stationery Store Facebook Shops Logo.png">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Ana Sayfa<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#paketler">Paketler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bilgial">Bilgi Al</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#rezervasyon" >Rezervasyon</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <div class="container-fluid">
+    <!--<div class="container-fluid">
         <ul class="navbar nav mt-2">
             <li class="nav-item"><a href="index.html" class="nav-link">Ana Sayfa</a></li>
             <li class="nav-item"><a href="#paketler" class="nav-link">Paketler</a></li>
@@ -20,7 +42,7 @@
             <li class="nav-item"><a href="#iletisim" class="nav-link">İletişim</a></li>
             
         </ul>
-    </div>
+    </div>-->
         </header>
 
 
@@ -120,13 +142,13 @@
                   <form id="bilgial-form" action="http://localhost:3001/send-mail" method="POST">
                   <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Mail Adresiniz </label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
                   </div>
                   <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Bilgi Almak İçin Yazın</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <button type="submit" class="btn btn-primary">Gönder</button>
+                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
+                  <button type="submit" class="btn gonderBtn btn-primary">Gönder</button>
                 </form>
                 </div>
        
