@@ -15,8 +15,17 @@ header img{
 }
 
 #paketler{
-    height: 600px;
+  height: 720px;
+ 
     
+}
+
+#paketlerimiz{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  padding-top: 10px;
+
 }
 
 
@@ -38,7 +47,7 @@ header img{
 
 #bilgial{
     margin-top: 55px;
-    height: 270px;
+    height: 350px;
 }
 
 .copyright{
@@ -54,7 +63,8 @@ header img{
 
 }
 #soru{
-    height: 200px;
+  margin-top: 50px;
+  height: 200px;
 }
 
 #soru img{
