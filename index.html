@@ -13,12 +13,9 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
 
-        <video controls autoplay loop>
-          <source src="Matematikçe.mp4" type="video/mp4">
-          Tarayıcınız bu videoyu desteklemiyor.
-      </video>
       
-        <!--<img src="Red Simple Geometric Pencil Icon Stationery Store Facebook Shops Logo.png">-->
+      
+        <img src="Red Simple Geometric Pencil Icon Stationery Store Facebook Shops Logo.png">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,9 +52,16 @@
 
         <section >
 
-        <div class="container">
+          
 
-            <img class="container-fluid"  src="https://media.istockphoto.com/id/1978157777/tr/foto%C4%9Fraf/green-chalkboard-background.jpg?s=612x612&w=0&k=20&c=4tAu3AF8ScNgNMD6HdJ2Iw7wEXTbJezqzb5UXbcwJZA=">
+        <div >
+
+          <video id="animasyon" autoplay muted>
+            <source src="Matematikçe.mp4" type="video/mp4">
+            Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+
+            <!--<img class="container-fluid"  src="https://media.istockphoto.com/id/1978157777/tr/foto%C4%9Fraf/green-chalkboard-background.jpg?s=612x612&w=0&k=20&c=4tAu3AF8ScNgNMD6HdJ2Iw7wEXTbJezqzb5UXbcwJZA=">
             <div class="text-overlay">
               <h3>Kişiye Özel Matematik Dersleriyle Hedeflerinize Ulaşın!</h3>
               <p>Daha fazla bilgi için bizimle iletişime geçin!</p>
@@ -68,12 +72,12 @@
                 <i class="fa-brands fa-twitter mr-2"><p>Twitter</p></i>
                 </div>
               </div>
-            </div>
-        </div>
+            </div>-->
+        </div> 
         
         
             <section id="paketler" class="container border border-success">
-              <p id="paketlerimiz">Paketlerimiz</p>
+              <p id="paketlerimiz"> P A K E T L E R</p>
 
               <div class="row row-cols-1 row-cols-md-3 g-4 ">
                   <div class="col">
@@ -96,7 +100,30 @@
                         </p>
                       </div>
                       <div class="card-footer">
-                        <button type="button" class="btn btn-secondary">Detayları Gör</button>
+                        <button id="detaylariGor" type="button" class="btn btn-secondary">Detayları Gör</button>
+
+                        <div id="modal" class="modal">
+                          <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <h2>Detaylı Bilgi</h2>
+                              <div class="row ">
+                                <div class="col-6">
+                                 
+                                    Haftada 2 gün birebir özel ders yapılır.
+                                   Her ders 40 dakika sürer.
+                                    Dersler bireysel ihtiyaçlara göre planlanır.
+                                    Öğrencinin seviyesine uygun kaynaklar sağlanır.
+                                    Dersler yüz yüze veya online olarak yapılabilir.
+
+                            
+                                <p>8 Ders Saaati Saadece 6.999TL</p>
+                                <button>Satın Al</button>
+                                </div>
+                                
+                              </div>
+                          </div>
+                      </div>
+
                       </div>
                     </div>
                   </div>
@@ -149,7 +176,7 @@
     <section class="container-bilgial">
       
                 <div id="bilgial" class="container border  border-success">
-                  <p id="paketlerimiz">Detaylı Bilgi Almak İçin</p>
+                  <p id="paketlerimiz">B İ L G İ  A L</p>
                   <form id="bilgial-form" action="http://localhost:3001/send-mail" method="POST">
                   <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Mail Adresiniz </label>

@@ -1,5 +1,26 @@
 const secenekler=document.querySelectorAll('.secenek');
 const geriBildirim=document.getElementById('geriBildirim');
+const modal = document.getElementById('modal');
+const detaylariGorButton = document.getElementById('detaylariGor');
+const closeButton = document.querySelector('.close');
+
+
+detaylariGorButton.addEventListener('click', ()=>{
+    modal.style.display='block';
+});
+
+
+closeButton.addEventListener('click', ()=> {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
+
 
 secenekler.forEach((button)=>{
     button.addEventListener('click',()=>{
@@ -41,3 +62,4 @@ document.getElementById("rezervasyonFormu").addEventListener("submit", function 
     }
   });
   
+
