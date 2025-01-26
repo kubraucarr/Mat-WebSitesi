@@ -5,6 +5,9 @@ const detaylariGorButton = document.getElementById('detaylariGor');
 const closeButton = document.querySelector('.close');
 
 
+
+  
+
 detaylariGorButton.addEventListener('click', ()=>{
     modal.style.display='block';
 });

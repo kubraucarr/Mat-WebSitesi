@@ -23,22 +23,7 @@ header img{
 
 
 
-#animasyon{
-  width: 100%;
-  height: 600px;
 
- 
-}
-
-
-#paketlerimiz{
-  text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 25px;
-  padding-top: 10px;
-  color: darkgreen;
-
-}
 
 
 
@@ -96,7 +81,7 @@ header img{
 }
   
   button.secenek {
-    background-color: #007BFF;
+    background-color: darkgreen;
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -107,7 +92,10 @@ header img{
   }
   
   button.secenek:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    border-color: darkgreen;
   }
   
   .hidden {
@@ -173,14 +161,17 @@ header img{
   }
   
   form button {
-    background-color: #007BFF;
+    background-color: darkgreen;
     color: white;
     border: none;
     cursor: pointer;
   }
   
   form button:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    border-color: darkgreen;
   }
   
   
@@ -201,23 +192,28 @@ header img{
   top: 0;
   width: 800px;
   height: 200px;
-  background-color: rgba(0, 0, 0, 0.5); /* Arka plan karartması */
+  background-color: rgba(0, 0, 0, 0.6); /* Arka plan karartması */
 }
 
 /* Modal içeriği */
 .modal-content {
   background-color: white;
-  margin: 15% auto; /* Sayfanın ortasına hizalama */
-  padding: 20px;
+  margin: 10% auto; /* Sayfanın ortasına hizalama */
+  padding: 10px;
   border-radius: 8px;
+  border-color: darkgreen;
   width: 250px; /* Genişlik */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
+
+.p1-icerik{
+  padding-top: 40px;
+}
 /* Kapatma butonu */
 .close {
-  color: #aaa;
+  color: darkgreen;
   float: right;
   font-size: 24px;
   font-weight: bold;
@@ -228,4 +224,27 @@ header img{
 .close:focus {
   color: black;
   text-decoration: none;
+}
+
+
+#animasyon{
+  width: 100%;
+  height: 600px;
+
+ 
+}
+
+#animasyon-2{
+  width:500px ;
+  height:300px;
+}
+
+
+#paketlerimiz{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  padding-top: 10px;
+  color: darkgreen;
+
 }
