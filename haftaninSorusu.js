@@ -1,4 +1,8 @@
-const soruHavuzu = [
+
+  
+
+
+  const soruHavuzu = [
     {
       soru: "Bir kenar uzunluğu 5 cm olan bir karenin çevresi kaç cm'dir?",
       secenekler: ["15 cm", "20 cm", "25 cm", "30 cm"],
@@ -18,8 +22,16 @@ const soruHavuzu = [
       soru: "Bir kitapta toplam 300 sayfa var. Her gün 20 sayfa okursanız kitabı kaç günde bitirirsiniz?",
       secenekler: ["10 gün", "15 gün", "20 gün", "25 gün"],
       dogruCevap: "15 gün"
+    },
+    {
+      soru: "6 ile 4'ün çarpımı kaçtır?",
+      secenekler: ["20", "24", "30", "36"],
+      dogruCevap: "24"
     }
   ];
+
+
+
 
   function getHaftaNumarasi() {
     const tarih = new Date();
@@ -39,13 +51,15 @@ const soruHavuzu = [
     const haftalikSoru = haftaninSorusu(soruHavuzu);
     const soruAlani = document.getElementById("soru-alani");
     const secenekAlani = document.getElementById("secenek-alani");
-    
+    const cevapMesaji= document.getElementById("cevap-mesaji");
+
+
     soruAlani.innerText = haftalikSoru.soru;
     secenekAlani.innerHTML = "";
   
     haftalikSoru.secenekler.forEach(secenek => {
       const buton = document.createElement("button");
-      buton.innerText = secenek;
+      buton.innerText= secenek;
       buton.classList.add("secenek-buton");
       buton.onclick = () => {
         if (secenek === haftalikSoru.dogruCevap) {

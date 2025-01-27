@@ -1,4 +1,4 @@
-const secenekler=document.querySelectorAll('.secenek');
+const secenekleri=document.querySelectorAll('.secenek');
 const geriBildirim=document.getElementById('geriBildirim');
 const modal = document.getElementById('modal');
 const detaylariGorButton = document.getElementById('detaylariGor');
@@ -25,7 +25,7 @@ window.addEventListener('click', (event) => {
 
 
 
-secenekler.forEach((button)=>{
+secenekleri.forEach((button)=>{
     button.addEventListener('click',()=>{
         const isCorrect = button.getAttribute('data-correct') === 'true';
         
