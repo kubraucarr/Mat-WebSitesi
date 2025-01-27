@@ -51,7 +51,7 @@
     const haftalikSoru = haftaninSorusu(soruHavuzu);
     const soruAlani = document.getElementById("soru-alani");
     const secenekAlani = document.getElementById("secenek-alani");
-    const cevapMesaji= document.getElementById("cevap-mesaji");
+    
 
 
     soruAlani.innerText = haftalikSoru.soru;
@@ -72,8 +72,9 @@
     });
   }
   
-  document.addEventListener("DOMContentLoaded", () => {
-    soruyuGoster();
-  });
-  
-  
+ 
+  soruyuGoster(); // İlk soruyu hemen göster
+setInterval(soruyuGoster, 60 * 1000);
+document.addEventListener("DOMContentLoaded", () => {
+  soruyuGoster();
+});

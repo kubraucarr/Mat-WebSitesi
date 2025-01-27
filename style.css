@@ -4,6 +4,21 @@
    
 }
 
+
+/* Navbar */
+.navbar {
+  position: fixed !important; /* Navbar sabit */
+  top: 0;
+  left: 0;
+  width: 100%; /* Tüm genişliği kaplar */
+  color: white;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* İçeriğin üstünde kalır */
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,13 +34,6 @@ header img{
  
     
 }
-
-
-
-
-
-
-
 
 .text-overlay {
     padding-bottom: 80px;
@@ -61,8 +69,6 @@ header img{
 }
 
 
-
-
 .rezervasyon-bilgi{
   margin: auto;
   border-radius: 25px;
@@ -76,9 +82,6 @@ header img{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
 }
-
-
-
 
   .rezervasyon-kismi {
     max-width: 400px;
@@ -143,8 +146,8 @@ header img{
   z-index: 1; /* Diğer içeriklerin üzerinde görünmesi için */
   left: 0;
   top: 0;
-  width: 800px;
-  height: 200px;
+  width: 500px;
+  height: 100px;
   background-color: rgba(0, 0, 0, 0.6); /* Arka plan karartması */
 }
 
