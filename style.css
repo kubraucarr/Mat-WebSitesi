@@ -19,6 +19,18 @@
 }
 
 
+.navbar-2 {
+  
+  top: 0;
+  left: 0;
+  width: 100%; /* Tüm genişliği kaplar */
+  color: white;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* İçeriğin üstünde kalır */
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -367,4 +379,50 @@ border-style:dotted;
 
 .SatınAl{
   text-align: center;
+
+  
 }
+
+.review-container {
+   max-width: 800px; 
+   height: 300px;
+   margin: 50px auto;
+   padding: 20px;
+    border: 1px solid green; 
+    border-radius: 10px; }
+
+
+.review-list { 
+  margin-top: 20px;
+   text-align: left; }
+
+.yorumunuzu-birakin{
+  text-align: center;
+  color: darkgreen;
+}
+.review { 
+  padding: 10px; 
+  border-bottom: 1px solid #ddd; }
+
+.review:last-child { 
+  border-bottom: none; }
+
+.input-field { 
+  width: 100%; padding: 
+  10px; margin-top: 10px; }
+
+.submit-btn { 
+  margin-left: 340px;
+  margin-top: 10px; 
+  padding: 10px; cursor: pointer; 
+  background-color: lightblue; 
+  border: none; 
+  border-radius: 5px; }
+
+  .display-reviews { 
+    margin-top: 40px;
+     padding: 20px; 
+     border: 1px solid #ddd;
+     border-radius: 10px; 
+     max-width: 600px; 
+     margin: auto; }
